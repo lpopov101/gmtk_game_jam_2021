@@ -9,6 +9,8 @@ public class RopeBehavior : MonoBehaviour {
     private int segmentLength = 35;
     private float lineWidth = 0.1f;
 
+    public Transform StartPoint;
+    public Transform EndPoint;
 
     // Start is called before the first frame update
     void Start() {
@@ -57,6 +59,17 @@ public class RopeBehavior : MonoBehaviour {
         RopeSegment firstSegment = this.ropeSegments[0];
         firstSegment.posNow = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         this.ropeSegments[0] = firstSegment;
+
+        //Constrant to First Point 
+        // RopeSegment firstSegment = this.ropeSegments[0];
+        // firstSegment.posNow = this.StartPoint.position;
+        // this.ropeSegments[0] = firstSegment;
+
+
+        //Constrant to Second Point 
+        RopeSegment endSegment = this.ropeSegments[this.ropeSegments.Count - 1];
+        endSegment.posNow = this.EndPoint.position;
+        this.ropeSegments[this.ropeSegments.Count - 1] = endSegment;
 
         for (int i = 0; i < this.segmentLength - 1; i++) {
             RopeSegment firstSeg = this.ropeSegments[i];
