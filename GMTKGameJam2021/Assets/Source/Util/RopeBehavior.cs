@@ -14,11 +14,6 @@ public class RopeBehavior : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        // GameObject cube2 = FindGameObjectWithTag("Test2");
-        // FixedJoint2D joint = cube2.GetComponent(typeof(FixedJoint2D));
-        // joint.enabled = false;
-
-
         this.lineRenderer = this.GetComponent<LineRenderer>();
         Vector3 ropeStartPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
