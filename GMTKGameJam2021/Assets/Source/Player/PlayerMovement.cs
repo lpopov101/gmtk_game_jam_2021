@@ -111,22 +111,23 @@ public class PlayerMovement : MonoBehaviour
                                                  PlayerManager.MovementState.SNAPPING,
         () =>
         {
-            return _playerMgr.GetPlayerFire();
+            float magnitude = PlayerPositionUtils.getSnapMagnitude();
+            return _playerMgr.GetPlayerFire() && magnitude > 0;
         });
 
         _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.JUMPING,
                                                  PlayerManager.MovementState.MIDAIR,
         () =>
         {
-            return _rb.velocity.y <= 0;
+            return _rb.velocity.y <= 0 && !_playerMgr.GetPlayerFire();
         });
 
         _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.SNAPPING,
                                                  PlayerManager.MovementState.IDLE,
         () =>
         {
-            // bool stopped = (Mathf.Abs(_rb.velocity.y) + Mathf.Abs(_rb.velocity.x)) < .01;
-            return  CheckGrounded();
+            bool slow = Mathf.Abs(_rb.velocity.x) < 2f;
+            return slow && CheckGrounded() && !_playerMgr.GetPlayerFire();
         });
 
         _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.MIDAIR,
@@ -195,6 +196,10 @@ public class PlayerMovement : MonoBehaviour
         Vector2 snapVector = PlayerPositionUtils.getSnapVectorForPlayer(_rb);
         float magnitude = PlayerPositionUtils.getSnapMagnitude();
         _rb.AddForce(snapVector * magnitude, ForceMode2D.Impulse);
+
+        if (CheckGrounded() && magnitude > 0) {
+            _rb.AddForce(Vector2.up * 5f, ForceMode2D.Impulse);
+        }
     }
 
     private bool CheckGrounded()
