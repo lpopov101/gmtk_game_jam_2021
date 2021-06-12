@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
         _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.SNAPPING,
         () =>
         {
-            ApplyHorizontalForce();
+            ApplyMidairHorizontalForce();
             ClampHorizontalVelocity();
         });
 
