@@ -127,15 +127,11 @@ public class RopeBehavior : MonoBehaviour {
         }
     }
 
-    public void getSnapVectorForPlayer(GameObject player) {
-        GameObject player1 = GameObject.FindGameObjectWithTag("Test1");
-        GameObject player2 = GameObject.FindGameObjectWithTag("Test2");
+    public Vector2 getSnapVectorForPlayer(Rigidbody2D playerRigidbody) {
+        Rigidbody2D player1Body = GameObject.FindGameObjectWithTag("Test1").GetComponent<Rigidbody2D>();
+        Rigidbody2D player2Body = GameObject.FindGameObjectWithTag("Test2").GetComponent<Rigidbody2D>();
 
-        Rigidbody2D body = player.GetComponent<Rigidbody2D>();
-        body.AddForce(Vector2.up * 10.0F, ForceMode2D.Impulse);
-        // if (player == player1) {
-
-        // }
+        return Vector2.up;
     }
 }
 

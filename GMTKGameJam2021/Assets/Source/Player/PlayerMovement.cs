@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
         _stateMachine.SetStateEntryCallback(PlayerManager.MovementState.SNAPPING,
         () =>
         {
-            Jump();
+            Snap();
         });
 
         _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.WALKING,
@@ -97,7 +97,9 @@ public class PlayerMovement : MonoBehaviour
             return _playerMgr.GetPlayerJump();
         });
 
-        _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.WALKING,
+        _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.JUMPING,
+                                                         PlayerManager.MovementState.MIDAIR,
+                                                         PlayerManager.MovementState.WALKING,
                                                          PlayerManager.MovementState.IDLE},
                                                  PlayerManager.MovementState.SNAPPING,
         () =>
@@ -161,6 +163,12 @@ public class PlayerMovement : MonoBehaviour
     private void Jump()
     {
         _rb.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
+    }
+
+    private void Snap()
+    {
+        Vector2 snapVector = PlayerPositionUtils.getSnapVectorForPlayer(_rb);
+        _rb.AddForce(snapVector * 10.0F, ForceMode2D.Impulse);
     }
 
     private bool CheckGrounded()
