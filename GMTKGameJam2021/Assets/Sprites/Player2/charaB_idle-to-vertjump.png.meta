@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 705b8ee536643b94f9ab230858d6e231
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3486609840119718971
+    second: charaB_idle-to-vertjump_0
+  - first:
+      213: 5330912616381518851
+    second: charaB_idle-to-vertjump_3
+  - first:
+      213: -3102762596126598067
+    second: charaB_idle-to-vertjump_4
+  - first:
+      213: -7988305899966494026
+    second: charaB_idle-to-vertjump_5
+  - first:
+      213: 8284410011864709206
+    second: charaB_idle-to-vertjump_6
+  - first:
+      213: -2055933707922163864
+    second: charaB_idle-to-vertjump_7
+  - first:
+      213: -3813705040187653996
+    second: charaB_idle-to-vertjump_8
+  - first:
+      213: -4221222452994350258
+    second: charaB_idle-to-vertjump_10
+  - first:
+      213: 3778010787390785698
+    second: charaB_idle-to-vertjump_11
+  - first:
+      213: 6369273572897070163
+    second: charaB_idle-to-vertjump_14
+  - first:
+      213: 3517482036875419113
+    second: charaB_idle-to-vertjump_16
+  - first:
+      213: -1481377499984520602
+    second: charaB_idle-to-vertjump_18
+  - first:
+      213: -2257037300774612391
+    second: charaB_idle-to-vertjump_20
+  - first:
+      213: -428323464905044518
+    second: charaB_idle-to-vertjump_22
+  - first:
+      213: -4066341845100595134
+    second: charaB_idle-to-vertjump_24
+  - first:
+      213: -7762199846331479615
+    second: charaB_idle-to-vertjump_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1545
+        width: 336
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb5841c2d21d9fc0800000000000000
+      internalID: -3486609840119718971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_3
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1541
+        width: 331
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304911cb7c43bf940800000000000000
+      internalID: 5330912616381518851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_4
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1541
+        width: 331
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c5183abd5c0f4d0800000000000000
+      internalID: -3102762596126598067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_5
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1543
+        width: 337
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba075b9b16d32190800000000000000
+      internalID: -7988305899966494026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1043
+        width: 328
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658b2ea530328f270800000000000000
+      internalID: 8284410011864709206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_7
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1042
+        width: 309
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8673c897f2bd773e0800000000000000
+      internalID: -2055933707922163864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_8
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1039
+        width: 286
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4908f79c87ff21bc0800000000000000
+      internalID: -3813705040187653996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_10
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 1040
+        width: 256
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e436e534b843b65c0800000000000000
+      internalID: -4221222452994350258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_11
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 545
+        width: 214
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8850c5bc03e6430800000000000000
+      internalID: 3778010787390785698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_14
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 542
+        width: 190
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c10d59194346850800000000000000
+      internalID: 6369273572897070163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_16
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 542
+        width: 191
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edd6cfa64b90d030800000000000000
+      internalID: 3517482036875419113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_18
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 542
+        width: 183
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a9a2f2307117be0800000000000000
+      internalID: -1481377499984520602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_20
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 47
+        width: 200
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952d58288846da0e0800000000000000
+      internalID: -2257037300774612391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_22
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 43
+        width: 189
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addce59f31a4e0af0800000000000000
+      internalID: -428323464905044518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_24
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 40
+        width: 178
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248f873e2a37197c0800000000000000
+      internalID: -4066341845100595134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-vertjump_26
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 38
+        width: 171
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c902db9d50274490800000000000000
+      internalID: -7762199846331479615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e9d7f7552873e204587977634acd2f00
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

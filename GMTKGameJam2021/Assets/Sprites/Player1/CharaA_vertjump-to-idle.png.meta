@@ -1,0 +1,888 @@
+fileFormatVersion: 2
+guid: 25e83ca1ed728594083c31b5c20a3f44
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5791710586099375469
+    second: CharaA_vertjump-to-idle_0
+  - first:
+      213: -5836735596485684730
+    second: CharaA_vertjump-to-idle_1
+  - first:
+      213: 4287588961136577804
+    second: CharaA_vertjump-to-idle_2
+  - first:
+      213: 3341160503280722317
+    second: CharaA_vertjump-to-idle_3
+  - first:
+      213: -4758786334235366447
+    second: CharaA_vertjump-to-idle_4
+  - first:
+      213: 2287384347370792708
+    second: CharaA_vertjump-to-idle_5
+  - first:
+      213: 4822797321396590655
+    second: CharaA_vertjump-to-idle_6
+  - first:
+      213: -8674912803103918843
+    second: CharaA_vertjump-to-idle_7
+  - first:
+      213: 4214181313851145991
+    second: CharaA_vertjump-to-idle_8
+  - first:
+      213: -1322900326168949615
+    second: CharaA_vertjump-to-idle_9
+  - first:
+      213: -4897312840741731640
+    second: CharaA_vertjump-to-idle_10
+  - first:
+      213: 8344372723291262475
+    second: CharaA_vertjump-to-idle_11
+  - first:
+      213: -3225844234655484383
+    second: CharaA_vertjump-to-idle_12
+  - first:
+      213: 5281367596975596354
+    second: CharaA_vertjump-to-idle_13
+  - first:
+      213: -1373725458844990974
+    second: CharaA_vertjump-to-idle_14
+  - first:
+      213: 1946521305223302897
+    second: CharaA_vertjump-to-idle_15
+  - first:
+      213: 4563020539509750164
+    second: CharaA_vertjump-to-idle_16
+  - first:
+      213: 420124465983881096
+    second: CharaA_vertjump-to-idle_17
+  - first:
+      213: 6111668104614313513
+    second: CharaA_vertjump-to-idle_18
+  - first:
+      213: -2541620355374440043
+    second: CharaA_vertjump-to-idle_19
+  - first:
+      213: -1409388988456731059
+    second: CharaA_vertjump-to-idle_20
+  - first:
+      213: 6367746972774920713
+    second: CharaA_vertjump-to-idle_21
+  - first:
+      213: -2305368425931365325
+    second: CharaA_vertjump-to-idle_22
+  - first:
+      213: -8545019032358708544
+    second: CharaA_vertjump-to-idle_23
+  - first:
+      213: -4153089784934765865
+    second: CharaA_vertjump-to-idle_24
+  - first:
+      213: -3899871021980795268
+    second: CharaA_vertjump-to-idle_25
+  - first:
+      213: -8790541728914961025
+    second: CharaA_vertjump-to-idle_26
+  - first:
+      213: -2626946778234976999
+    second: CharaA_vertjump-to-idle_27
+  - first:
+      213: 3350288624253524789
+    second: CharaA_vertjump-to-idle_28
+  - first:
+      213: -9044184934731154569
+    second: CharaA_vertjump-to-idle_29
+  - first:
+      213: 4146447818941989064
+    second: CharaA_vertjump-to-idle_30
+  - first:
+      213: 9060946837024179631
+    second: CharaA_vertjump-to-idle_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_0
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3034
+        width: 147
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3926da168e5bf9fa0800000000000000
+      internalID: -5791710586099375469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3024
+        width: 224
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602d79b36efbffea0800000000000000
+      internalID: -5836735596485684730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_2
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 3024
+        width: 280
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d8e6b8173908b30800000000000000
+      internalID: 4287588961136577804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_3
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 3017
+        width: 313
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81ec9786cf2e5e20800000000000000
+      internalID: 3341160503280722317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_4
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 3016
+        width: 343
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbeae9ca0565fdb0800000000000000
+      internalID: -4758786334235366447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_5
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 2525
+        width: 338
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40723d1e1fb6ebf10800000000000000
+      internalID: 2287384347370792708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_6
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 2535
+        width: 333
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f389c8d8c940ee240800000000000000
+      internalID: 4822797321396590655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_7
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 2544
+        width: 321
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505b08964c48c9780800000000000000
+      internalID: -8674912803103918843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_8
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 2553
+        width: 318
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fbf27c397cb7a30800000000000000
+      internalID: 4214181313851145991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_9
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 2544
+        width: 287
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c8371992d14ade0800000000000000
+      internalID: -1322900326168949615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_10
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 2040
+        width: 250
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c241ad1bef390cb0800000000000000
+      internalID: -4897312840741731640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_11
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 2038
+        width: 219
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e0c3d08ca2dc370800000000000000
+      internalID: 8344372723291262475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_12
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 2036
+        width: 203
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1263e9482cf7b33d0800000000000000
+      internalID: -3225844234655484383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_13
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 2031
+        width: 207
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2432df9f8df2b4940800000000000000
+      internalID: 5281367596975596354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_14
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 2029
+        width: 209
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20242a639fb8fece0800000000000000
+      internalID: -1373725458844990974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_15
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1532
+        width: 210
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe809160de630b10800000000000000
+      internalID: 1946521305223302897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_16
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1537
+        width: 212
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4993a48310b135f30800000000000000
+      internalID: 4563020539509750164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_17
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 1537
+        width: 212
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f7b64d9f494d500800000000000000
+      internalID: 420124465983881096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_18
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1537
+        width: 218
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92efe9892c101d450800000000000000
+      internalID: 6111668104614313513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_19
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 1539
+        width: 227
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591210cb0c95abcd0800000000000000
+      internalID: -2541620355374440043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_20
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1040
+        width: 236
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e70b8ae28d07ce0800000000000000
+      internalID: -1409388988456731059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_21
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1040
+        width: 244
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90271db4228ce5850800000000000000
+      internalID: 6367746972774920713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_22
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 1040
+        width: 255
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334a5f781afa100e0800000000000000
+      internalID: -2305368425931365325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_23
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 1040
+        width: 266
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca9e49a67ef96980800000000000000
+      internalID: -8545019032358708544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_24
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 1042
+        width: 275
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dae8a838d24d56c0800000000000000
+      internalID: -4153089784934765865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_25
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 541
+        width: 283
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ebef8c7ffd0e9c0800000000000000
+      internalID: -3899871021980795268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_26
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 541
+        width: 291
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d86c03fd8b10680800000000000000
+      internalID: -8790541728914961025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_27
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 541
+        width: 297
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9158277c2d53b8bd0800000000000000
+      internalID: -2626946778234976999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_28
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 543
+        width: 311
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bd9afc0cd9e7e20800000000000000
+      internalID: 3350288624253524789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_29
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 543
+        width: 313
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bf86258b99c7280800000000000000
+      internalID: -9044184934731154569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_30
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 44
+        width: 311
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c00bbf82542b8930800000000000000
+      internalID: 4146447818941989064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharaA_vertjump-to-idle_31
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 44
+        width: 313
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5868d2423febd70800000000000000
+      internalID: 9060946837024179631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4b9eaf42f3b98074cade6086ce670934
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
