@@ -8,6 +8,8 @@ public class CameraFollowNPlayers : MonoBehaviour
     private Transform[] _playerTransforms;
     [SerializeField]
     private float _orthoSizeCoefficient;
+    [SerializeField]
+    private float _minOrthoSize;
 
     private Camera _camera;
 
@@ -37,7 +39,7 @@ public class CameraFollowNPlayers : MonoBehaviour
         transform.position = new Vector3(averagePlayerX, averagePlayerY, transform.position.z);
         var xDist = maxPlayerX - minPlayerX;
         var yDist = maxPlayerY - minPlayerY;
-        Debug.Log("x:" + xDist + "y:" + yDist);
-        _camera.orthographicSize = Mathf.Sqrt(_orthoSizeCoefficient * Mathf.Sqrt(Mathf.Pow(xDist, 2) + Mathf.Pow(yDist, 2)));
+        var orthoSize = _orthoSizeCoefficient * Mathf.Sqrt(Mathf.Sqrt(Mathf.Pow(xDist, 2) + Mathf.Pow(yDist, 2)));
+        _camera.orthographicSize = Mathf.Max(orthoSize, _minOrthoSize);
     }
 }
