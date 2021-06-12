@@ -31,30 +31,7 @@ public class RopeBehavior : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        float dist = checkDistance();
-        if (dist >= 8.0f) {
-            GameObject cube1 = GameObject.FindGameObjectWithTag("Test1");
-            FixedJoint2D joint = cube1.GetComponent(typeof(FixedJoint2D)) as FixedJoint2D;
-            joint.enabled = true;
-        }
         this.DrawRope();
-    }
-
-    float checkDistance() {
-        float pos1x = GameObject.FindGameObjectWithTag("Test1").transform.position.x;
-        float pos1y = GameObject.FindGameObjectWithTag("Test1").transform.position.y;
-        float pos2x = GameObject.FindGameObjectWithTag("Test2").transform.position.x;
-        float pos2y = GameObject.FindGameObjectWithTag("Test2").transform.position.y;
-
-        float xDiff = pos1x - pos2x;
-        float yDiff = pos1y - pos2y;
-
-        float xDiffSq = xDiff * xDiff;
-        float yDiffSq = yDiff * yDiff;
-
-        float distance = Mathf.Sqrt(xDiffSq + yDiffSq);
-
-        return distance;
     }
 
     private void FixedUpdate() {
