@@ -63,6 +63,13 @@ public class PlayerMovement : MonoBehaviour
             ClampHorizontalVelocity();
         });
 
+        _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.SNAPPING,
+        () =>
+        {
+            ApplyHorizontalForce();
+            ClampHorizontalVelocity();
+        });
+
         _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.MIDAIR,
         () =>
         {
@@ -76,6 +83,12 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         });
 
+        _stateMachine.SetStateEntryCallback(PlayerManager.MovementState.SNAPPING,
+        () =>
+        {
+            Jump();
+        });
+
         _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.WALKING,
                                                          PlayerManager.MovementState.IDLE},
                                                  PlayerManager.MovementState.JUMPING,
@@ -84,7 +97,22 @@ public class PlayerMovement : MonoBehaviour
             return _playerMgr.GetPlayerJump();
         });
 
+        _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.WALKING,
+                                                         PlayerManager.MovementState.IDLE},
+                                                 PlayerManager.MovementState.SNAPPING,
+        () =>
+        {
+            return _playerMgr.GetPlayerFire();
+        });
+
         _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.JUMPING,
+                                                 PlayerManager.MovementState.MIDAIR,
+        () =>
+        {
+            return _rb.velocity.y <= 0;
+        });
+
+        _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.SNAPPING,
                                                  PlayerManager.MovementState.MIDAIR,
         () =>
         {

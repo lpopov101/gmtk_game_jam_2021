@@ -10,7 +10,8 @@ public class PlayerManager : MonoBehaviour
         IDLE = 1,
         WALKING = 2,
         JUMPING = 3,
-        MIDAIR = 4
+        MIDAIR = 4,
+        SNAPPING = 5
     }
 
     [SerializeField]
@@ -44,6 +45,11 @@ public class PlayerManager : MonoBehaviour
     public bool GetPlayerJump()
     {
         return _inputMgr.GetPlayerJump(_playerIndex);
+    }
+
+    public bool GetPlayerFire()
+    {
+        return _inputMgr.GetPlayerFire(_playerIndex);
     }
 
     public StateMachine<MovementState> GetMovementStateMachine()

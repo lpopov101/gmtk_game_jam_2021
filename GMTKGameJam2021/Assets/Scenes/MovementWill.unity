@@ -468,9 +468,11 @@ MonoBehaviour:
     - verticalAxis: Vertical
       horizontalAxis: Horizontal
       jumpAxis: Jump
+      fireAxis: Fire1
     - verticalAxis: Vertical2
       horizontalAxis: Horizontal2
       jumpAxis: Jump2
+      fireAxis: Fire2
 --- !u!4 &1366694821
 Transform:
   m_ObjectHideFlags: 0
