@@ -14,11 +14,6 @@ public class RopeBehavior : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        // GameObject cube2 = FindGameObjectWithTag("Test2");
-        // FixedJoint2D joint = cube2.GetComponent(typeof(FixedJoint2D));
-        // joint.enabled = false;
-
-
         this.lineRenderer = this.GetComponent<LineRenderer>();
         Vector3 ropeStartPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -131,4 +126,29 @@ public class RopeBehavior : MonoBehaviour {
             this.posOld = pos;
         }
     }
+
+    public Vector2 getSnapVectorForPlayer(Rigidbody2D playerRigidbody) {
+        Rigidbody2D player1Body = GameObject.FindGameObjectWithTag("Test1").GetComponent<Rigidbody2D>();
+        Rigidbody2D player2Body = GameObject.FindGameObjectWithTag("Test2").GetComponent<Rigidbody2D>();
+
+        return Vector2.up;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

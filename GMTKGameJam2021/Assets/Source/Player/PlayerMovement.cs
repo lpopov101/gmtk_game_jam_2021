@@ -70,6 +70,13 @@ public class PlayerMovement : MonoBehaviour
             ClampHorizontalVelocity();
         });
 
+        _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.SNAPPING,
+        () =>
+        {
+            ApplyMidairHorizontalForce();
+            ClampHorizontalVelocity();
+        });
+
         _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.MIDAIR,
         () =>
         {
@@ -83,6 +90,12 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         });
 
+        _stateMachine.SetStateEntryCallback(PlayerManager.MovementState.SNAPPING,
+        () =>
+        {
+            Snap();
+        });
+
         _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.WALKING,
                                                          PlayerManager.MovementState.IDLE},
                                                  PlayerManager.MovementState.JUMPING,
@@ -91,11 +104,30 @@ public class PlayerMovement : MonoBehaviour
             return _playerMgr.GetPlayerJump();
         });
 
+        _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.JUMPING,
+                                                         PlayerManager.MovementState.MIDAIR,
+                                                         PlayerManager.MovementState.WALKING,
+                                                         PlayerManager.MovementState.IDLE},
+                                                 PlayerManager.MovementState.SNAPPING,
+        () =>
+        {
+            float magnitude = PlayerPositionUtils.getSnapMagnitude();
+            return _playerMgr.GetPlayerFire() && magnitude > 0;
+        });
+
         _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.JUMPING,
                                                  PlayerManager.MovementState.MIDAIR,
         () =>
         {
-            return _rb.velocity.y <= 0;
+            return _rb.velocity.y <= 0 && !_playerMgr.GetPlayerFire();
+        });
+
+        _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.SNAPPING,
+                                                 PlayerManager.MovementState.IDLE,
+        () =>
+        {
+            bool slow = Mathf.Abs(_rb.velocity.x) < 2f;
+            return slow && CheckGrounded() && !_playerMgr.GetPlayerFire();
         });
 
         _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.MIDAIR,
@@ -149,14 +181,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void ClampHorizontalVelocity()
     {
-        var clampedXVelocity = Mathf.Clamp(_rb.velocity.x, -_topHorizontalSpeed,
-                                           _topHorizontalSpeed);
-        _rb.velocity = new Vector2(clampedXVelocity, _rb.velocity.y);
+        // var clampedXVelocity = Mathf.Clamp(_rb.velocity.x, -_topHorizontalSpeed,
+        //                                    _topHorizontalSpeed);
+        // _rb.velocity = new Vector2(clampedXVelocity, _rb.velocity.y);
     }
 
     private void Jump()
     {
         _rb.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
+    }
+
+    private void Snap()
+    {
+        Vector2 snapVector = PlayerPositionUtils.getSnapVectorForPlayer(_rb);
+        float magnitude = PlayerPositionUtils.getSnapMagnitude();
+        _rb.AddForce(snapVector * magnitude, ForceMode2D.Impulse);
+
+        if (CheckGrounded() && magnitude > 0) {
+            _rb.AddForce(Vector2.up * 5f, ForceMode2D.Impulse);
+        }
     }
 
     private bool CheckGrounded()

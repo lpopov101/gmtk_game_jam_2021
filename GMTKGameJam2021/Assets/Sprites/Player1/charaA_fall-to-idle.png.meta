@@ -1,12 +1,84 @@
 fileFormatVersion: 2
 guid: 733cd6c1a7d312c418e85d1049bcd02f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2349321460626260838
+    second: charaA_fall-to-idle_0
+  - first:
+      213: 5170614542434957795
+    second: charaA_fall-to-idle_1
+  - first:
+      213: 227968813929049135
+    second: charaA_fall-to-idle_2
+  - first:
+      213: 8089270054906741037
+    second: charaA_fall-to-idle_3
+  - first:
+      213: -6675769972756074606
+    second: charaA_fall-to-idle_4
+  - first:
+      213: 609667411904545261
+    second: charaA_fall-to-idle_5
+  - first:
+      213: 3673857583787735727
+    second: charaA_fall-to-idle_6
+  - first:
+      213: 5334725606163239028
+    second: charaA_fall-to-idle_7
+  - first:
+      213: -6004725272640017566
+    second: charaA_fall-to-idle_8
+  - first:
+      213: -338938356226077
+    second: charaA_fall-to-idle_9
+  - first:
+      213: 2722083274254922765
+    second: charaA_fall-to-idle_10
+  - first:
+      213: 5336881904399956158
+    second: charaA_fall-to-idle_11
+  - first:
+      213: -8531780447398149705
+    second: charaA_fall-to-idle_12
+  - first:
+      213: 5525371724065611920
+    second: charaA_fall-to-idle_13
+  - first:
+      213: 1157670034186839921
+    second: charaA_fall-to-idle_14
+  - first:
+      213: -8787249622429916030
+    second: charaA_fall-to-idle_15
+  - first:
+      213: -2880717261933155790
+    second: charaA_fall-to-idle_16
+  - first:
+      213: -613898333462739603
+    second: charaA_fall-to-idle_17
+  - first:
+      213: -3719805036437753190
+    second: charaA_fall-to-idle_18
+  - first:
+      213: 6212784246626542065
+    second: charaA_fall-to-idle_19
+  - first:
+      213: 232001400148584912
+    second: charaA_fall-to-idle_20
+  - first:
+      213: -6605140942286103621
+    second: charaA_fall-to-idle_21
+  - first:
+      213: 7375518207581115556
+    second: charaA_fall-to-idle_22
+  - first:
+      213: -8509135320882723569
+    second: charaA_fall-to-idle_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +107,13 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +122,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -75,13 +147,529 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_0
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 2554
+        width: 316
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66384d3db677a9020800000000000000
+      internalID: 2349321460626260838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_1
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 2544
+        width: 287
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9fd400886b1c740800000000000000
+      internalID: 5170614542434957795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_2
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 2539
+        width: 249
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cab1ead68e92300800000000000000
+      internalID: 227968813929049135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_3
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2538
+        width: 218
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21cbe2914cd24070800000000000000
+      internalID: 8089270054906741037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_4
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2035
+        width: 202
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fa7ab5496ea53a0800000000000000
+      internalID: -6675769972756074606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_5
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 2031
+        width: 206
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1c3bde749f57800800000000000000
+      internalID: 609667411904545261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_6
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 2030
+        width: 208
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faafa0de10a2cf230800000000000000
+      internalID: 3673857583787735727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_7
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 2032
+        width: 210
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4705a899ca0c80a40800000000000000
+      internalID: 5334725606163239028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_8
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1537
+        width: 211
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b2b7ecd2eeaaca0800000000000000
+      internalID: -6004725272640017566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1538
+        width: 211
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e72da3ccbbcefff0800000000000000
+      internalID: -338938356226077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_10
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1537
+        width: 219
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d043ff2d058c6c520800000000000000
+      internalID: 2722083274254922765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_11
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 1539
+        width: 227
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb838f7e0d9601a40800000000000000
+      internalID: 5336881904399956158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_12
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1040
+        width: 235
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1c53be2e6099980800000000000000
+      internalID: -8531780447398149705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_13
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1041
+        width: 245
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0902be0fe401eac40800000000000000
+      internalID: 5525371724065611920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_14
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1041
+        width: 255
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17722d233ced01010800000000000000
+      internalID: 1157670034186839921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_15
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 1041
+        width: 265
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2842166760b6d0680800000000000000
+      internalID: -8787249622429916030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 541
+        width: 276
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a6328b9e2a508d0800000000000000
+      internalID: -2880717261933155790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_17
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 541
+        width: 283
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65cfb1e7befa77f0800000000000000
+      internalID: -613898333462739603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_18
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 541
+        width: 290
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a923b691709906cc0800000000000000
+      internalID: -3719805036437753190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_19
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 541
+        width: 297
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f161560b5e383650800000000000000
+      internalID: 6212784246626542065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_20
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 43
+        width: 310
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9ef335b0c383300800000000000000
+      internalID: 232001400148584912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_21
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 43
+        width: 312
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbd5abfe43d554a0800000000000000
+      internalID: -6605140942286103621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_22
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 43
+        width: 312
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a45c4d8bba1b5660800000000000000
+      internalID: 7375518207581115556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaA_fall-to-idle_23
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 43
+        width: 311
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f054e0d428a79e980800000000000000
+      internalID: -8509135320882723569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 42f43bbee676e4eaa8d8f0c66cca2605
     internalID: 0
     vertices: []
     indices: 
