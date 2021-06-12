@@ -6,7 +6,7 @@ public class RopeBehavior : MonoBehaviour {
     private LineRenderer lineRenderer;
     private List<RopeSegment> ropeSegments = new List<RopeSegment>();
     private float ropeSegLen = 0.25f;
-    private int segmentLength = 35;
+    private int segmentLength = 20;
     private float lineWidth = 0.1f;
 
     public Transform StartPoint;
@@ -14,6 +14,11 @@ public class RopeBehavior : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+        // GameObject cube2 = FindGameObjectWithTag("Test2");
+        // FixedJoint2D joint = cube2.GetComponent(typeof(FixedJoint2D));
+        // joint.enabled = false;
+
+
         this.lineRenderer = this.GetComponent<LineRenderer>();
         Vector3 ropeStartPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -26,7 +31,30 @@ public class RopeBehavior : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        float dist = checkDistance();
+        if (dist >= 8.0f) {
+            GameObject cube1 = GameObject.FindGameObjectWithTag("Test1");
+            FixedJoint2D joint = cube1.GetComponent(typeof(FixedJoint2D)) as FixedJoint2D;
+            joint.enabled = true;
+        }
         this.DrawRope();
+    }
+
+    float checkDistance() {
+        float pos1x = GameObject.FindGameObjectWithTag("Test1").transform.position.x;
+        float pos1y = GameObject.FindGameObjectWithTag("Test1").transform.position.y;
+        float pos2x = GameObject.FindGameObjectWithTag("Test2").transform.position.x;
+        float pos2y = GameObject.FindGameObjectWithTag("Test2").transform.position.y;
+
+        float xDiff = pos1x - pos2x;
+        float yDiff = pos1y - pos2y;
+
+        float xDiffSq = xDiff * xDiff;
+        float yDiffSq = yDiff * yDiff;
+
+        float distance = Mathf.Sqrt(xDiffSq + yDiffSq);
+
+        return distance;
     }
 
     private void FixedUpdate() {
@@ -56,19 +84,19 @@ public class RopeBehavior : MonoBehaviour {
     private void ApplyConstraint() {
 
         //Constrant to Mouse
-        RopeSegment firstSegment = this.ropeSegments[0];
-        firstSegment.posNow = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        this.ropeSegments[0] = firstSegment;
+        // RopeSegment firstSegment = this.ropeSegments[0];
+        // firstSegment.posNow = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // this.ropeSegments[0] = firstSegment;
 
         //Constrant to First Point 
-        // RopeSegment firstSegment = this.ropeSegments[0];
-        // firstSegment.posNow = this.StartPoint.position;
-        // this.ropeSegments[0] = firstSegment;
+        RopeSegment firstSegment = this.ropeSegments[0];
+        firstSegment.posNow = GameObject.FindGameObjectWithTag("Test1").transform.position;
+        this.ropeSegments[0] = firstSegment;
 
 
         //Constrant to Second Point 
         RopeSegment endSegment = this.ropeSegments[this.ropeSegments.Count - 1];
-        endSegment.posNow = this.EndPoint.position;
+        endSegment.posNow = GameObject.FindGameObjectWithTag("Test2").transform.position;
         this.ropeSegments[this.ropeSegments.Count - 1] = endSegment;
 
         for (int i = 0; i < this.segmentLength - 1; i++) {
