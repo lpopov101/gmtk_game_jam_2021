@@ -11,6 +11,7 @@ public class InputManager
         public string verticalAxis;
         public string horizontalAxis;
         public string jumpAxis;
+        public string fireAxis;
     }
 
     [SerializeField]
@@ -29,6 +30,11 @@ public class InputManager
     public bool GetPlayerJump(int playerIdx)
     {
         return Input.GetButtonDown(_playerMovementAxes[playerIdx].jumpAxis);
+    }
+
+    public bool GetPlayerFire(int playerIdx)
+    {
+        return Input.GetButtonDown(_playerMovementAxes[playerIdx].fireAxis);
     }
 
 }

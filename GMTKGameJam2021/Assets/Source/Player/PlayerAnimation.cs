@@ -7,6 +7,8 @@ public class PlayerAnimation : MonoBehaviour
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
     private PlayerManager _playerMgr;
+    private StateMachine<PlayerManager.MovementState> _stateMachine;
+    private Rigidbody2D _rb;
 
     // Start is called before the first frame update
     private void Start()
@@ -14,6 +16,8 @@ public class PlayerAnimation : MonoBehaviour
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _playerMgr = GetComponent<PlayerManager>();
+        _stateMachine = _playerMgr.GetMovementStateMachine();
+        _rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -26,7 +30,10 @@ public class PlayerAnimation : MonoBehaviour
 
     private void HorizontalSpriteFlip()
     {
-        if(_playerMgr.GetPlayerHorizontalAxis() < 0)
+        if (_stateMachine.GetCurrentState() == PlayerManager.MovementState.SNAPPING) {
+            _spriteRenderer.flipX = _rb.velocity.x <= 0;
+        }
+        else if(_playerMgr.GetPlayerHorizontalAxis() < 0)
         {
             _spriteRenderer.flipX = true;
         }
