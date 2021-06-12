@@ -74,7 +74,6 @@ public class PlayerMovement : MonoBehaviour
         () =>
         {
             ApplyMidairHorizontalForce();
-            ClampHorizontalVelocity();
         });
 
         _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.MIDAIR,
@@ -181,9 +180,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void ClampHorizontalVelocity()
     {
-        // var clampedXVelocity = Mathf.Clamp(_rb.velocity.x, -_topHorizontalSpeed,
-        //                                    _topHorizontalSpeed);
-        // _rb.velocity = new Vector2(clampedXVelocity, _rb.velocity.y);
+        if (_playerMgr.GetPlayerFire())
+        {
+            return;
+        }
+
+        var clampedXVelocity = Mathf.Clamp(_rb.velocity.x, -_topHorizontalSpeed,
+                                            _topHorizontalSpeed);
+        _rb.velocity = new Vector2(clampedXVelocity, _rb.velocity.y);
     }
 
     private void Jump()
