@@ -139,6 +139,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _horizontalAcceleration: 3
+  _horizontalAccelerationMidair: 1
+  _horizontalGroundedDecceleration: 2
+  _groundClampForce: 2
   _topHorizontalSpeed: 5
   _jumpStrength: 7.5
   _groundLayer:

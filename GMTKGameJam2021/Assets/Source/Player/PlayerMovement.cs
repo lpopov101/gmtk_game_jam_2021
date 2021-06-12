@@ -9,6 +9,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float _horizontalAcceleration = 1.0F;
     [SerializeField]
+    private float _horizontalAccelerationMidair = 1.0F;
+    [SerializeField]
+    private float _horizontalGroundedDecceleration = 1.0F;
+    [SerializeField]
+    private float _groundClampForce = 1.0F;
+    [SerializeField]
     private float _topHorizontalSpeed = 1.0F;
     [SerializeField]
     private float _jumpStrength = 10.0F;
@@ -44,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
         _stateMachine.SetStateBehaviorCallback( PlayerManager.MovementState.IDLE,
         () =>
         {
+            Deccelerate();
             ClampHorizontalVelocity();
             ApplyGroundClampForce();
         });
@@ -51,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
         _stateMachine.SetStateBehaviorCallback( PlayerManager.MovementState.WALKING,
         () =>
         {
-            ApplyHorizontalForce();
+            ApplyGroundedHorizontalForce();
             ClampHorizontalVelocity();
             ApplyGroundClampForce();
         });
@@ -59,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.JUMPING,
         () =>
         {
-            ApplyHorizontalForce();
+            ApplyMidairHorizontalForce();
             ClampHorizontalVelocity();
         });
 
@@ -73,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.MIDAIR,
         () =>
         {
-            ApplyHorizontalForce();
+            ApplyMidairHorizontalForce();
             ClampHorizontalVelocity();
         });
 
@@ -144,14 +151,31 @@ public class PlayerMovement : MonoBehaviour
         });
     }
 
-    private void ApplyHorizontalForce()
+    private void ApplyGroundedHorizontalForce()
     {
-        _rb.AddForce(Vector2.right * _horizontalAcceleration * _playerMgr.GetPlayerHorizontalAxis());
+        var direction = Vector2.right;
+        var hit = Physics2D.Raycast(transform.position, -Vector2.up, 100, _groundLayer);
+        if(hit.collider != null)
+        {
+            direction = -Vector2.Perpendicular(hit.normal);
+        }
+        _rb.AddForce(direction * _horizontalAcceleration * _playerMgr.GetPlayerHorizontalAxis());
+    }
+
+    private void ApplyMidairHorizontalForce()
+    {
+        _rb.AddForce(Vector2.right * _horizontalAccelerationMidair * _playerMgr.GetPlayerHorizontalAxis());
+    }
+
+    private void Deccelerate()
+    {
+        var oppositeVelocityDirection = -_rb.velocity.normalized;
+        _rb.AddForce(oppositeVelocityDirection * _horizontalGroundedDecceleration);
     }
 
     private void ApplyGroundClampForce()
     {
-        _rb.AddForce(Vector2.down * 2);
+        _rb.AddForce(Vector2.down * _groundClampForce);
     }
 
     private void ClampHorizontalVelocity()
