@@ -23,8 +23,6 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         _inputMgr = SceneManager.FindSceneManager().GetInputManager();
-        _movementStateMachine = new StateMachine<PlayerManager.MovementState>(
-            PlayerManager.MovementState.MIDAIR);
     }
     
     public int GetPlayerIndex()
@@ -54,6 +52,10 @@ public class PlayerManager : MonoBehaviour
 
     public StateMachine<MovementState> GetMovementStateMachine()
     {
+        if (_movementStateMachine == null) {
+            _movementStateMachine = new StateMachine<PlayerManager.MovementState>(
+                PlayerManager.MovementState.MIDAIR);
+        }
         return _movementStateMachine;
     }
 }

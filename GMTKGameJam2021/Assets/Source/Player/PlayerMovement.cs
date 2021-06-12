@@ -115,10 +115,11 @@ public class PlayerMovement : MonoBehaviour
         });
 
         _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.SNAPPING,
-                                                 PlayerManager.MovementState.MIDAIR,
+                                                 PlayerManager.MovementState.IDLE,
         () =>
         {
-            return _rb.velocity.y <= 0;
+            // bool stopped = (Mathf.Abs(_rb.velocity.y) + Mathf.Abs(_rb.velocity.x)) < .01;
+            return  CheckGrounded();
         });
 
         _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.MIDAIR,
@@ -155,9 +156,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void ClampHorizontalVelocity()
     {
-        var clampedXVelocity = Mathf.Clamp(_rb.velocity.x, -_topHorizontalSpeed,
-                                           _topHorizontalSpeed);
-        _rb.velocity = new Vector2(clampedXVelocity, _rb.velocity.y);
+        // var clampedXVelocity = Mathf.Clamp(_rb.velocity.x, -_topHorizontalSpeed,
+        //                                    _topHorizontalSpeed);
+        // _rb.velocity = new Vector2(clampedXVelocity, _rb.velocity.y);
     }
 
     private void Jump()
@@ -168,7 +169,8 @@ public class PlayerMovement : MonoBehaviour
     private void Snap()
     {
         Vector2 snapVector = PlayerPositionUtils.getSnapVectorForPlayer(_rb);
-        _rb.AddForce(snapVector * 10.0F, ForceMode2D.Impulse);
+        float magnitude = PlayerPositionUtils.getSnapMagnitude();
+        _rb.AddForce(snapVector * magnitude, ForceMode2D.Impulse);
     }
 
     private bool CheckGrounded()
