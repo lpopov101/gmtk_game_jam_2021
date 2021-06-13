@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,15 +19,32 @@ public class GameManager
     {
         _coinsCollected++;
         Debug.Log($"Coins collected: {_coinsCollected}/{_totalCoins}");
+
+        UIController uiController = SceneManager.FindUIController();
+        if (uiController != null) {
+            uiController.notifyCoinCountChanged();
+        }
+
         if (_coinsCollected >= _totalCoins)
         {
             Win();
         }
     }
 
+    private T FindObjectOfType<T>()
+    {
+        throw new NotImplementedException();
+    }
+
     private void Win()
     {
         Debug.Log("Win!");
         // TODO: Implement win condition
+
+        UIController uiController = SceneManager.FindUIController();
+        if (uiController != null)
+        {
+            uiController.notifyUserWin();
+        }
     }
 }
