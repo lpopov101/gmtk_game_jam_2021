@@ -162,7 +162,7 @@ public class PlayerMovement : MonoBehaviour
     private void ApplyGroundedHorizontalForce()
     {
         var direction = Vector2.right;
-        var hit = Physics2D.Raycast((Vector2)transform.position + (0.2F * _rb.velocity.normalized), -Vector2.up, 100, _groundLayer);
+        var hit = Physics2D.Raycast((Vector2)transform.position + (0.5F * _rb.velocity.normalized), -Vector2.up, 100, _groundLayer);
         if(hit.collider != null)
         {
             direction = -Vector2.Perpendicular(hit.normal);
