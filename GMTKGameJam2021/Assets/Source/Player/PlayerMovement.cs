@@ -222,12 +222,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Jump()
-<<<<<<< HEAD
     {
         _rb.velocity = new Vector2(_rb.velocity.x, 0);
-=======
-    {   _rb.velocity = new Vector2(_rb.velocity.x, 0);
->>>>>>> origin
         _rb.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
     }
 
