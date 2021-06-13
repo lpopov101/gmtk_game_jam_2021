@@ -136,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
                                                  PlayerManager.MovementState.MIDAIR,
         () =>
         {
-            return _rb.velocity.y <= 0 && !_playerMgr.GetPlayerFire();
+            return _rb.velocity.y <= 0 && !_playerMgr.GetPlayerFire() && !_playerMgr.GetPlayerJump();
         });
 
         _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.SNAPPING,

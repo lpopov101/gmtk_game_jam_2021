@@ -1,12 +1,36 @@
 fileFormatVersion: 2
 guid: 10bfd424e43581446a2ce10a834d9d16
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1980803780481549935
+    second: charaB_idle-to-snap_0
+  - first:
+      213: -1085851241868474074
+    second: charaB_idle-to-snap_1
+  - first:
+      213: 5777528694873972781
+    second: charaB_idle-to-snap_2
+  - first:
+      213: -4978727633556376882
+    second: charaB_idle-to-snap_3
+  - first:
+      213: 6518900862867560746
+    second: charaB_idle-to-snap_4
+  - first:
+      213: -778651736017388093
+    second: charaB_idle-to-snap_5
+  - first:
+      213: -5656489615786772444
+    second: charaB_idle-to-snap_6
+  - first:
+      213: 7399264006158153158
+    second: charaB_idle-to-snap_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +59,13 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +74,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -75,13 +99,193 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: charaB_idle-to-snap_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1545
+        width: 332
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19975a6d475c284e0800000000000000
+      internalID: -1980803780481549935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-snap_1
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1541
+        width: 330
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62943817c084ee0f0800000000000000
+      internalID: -1085851241868474074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-snap_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1042
+        width: 328
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20e691ccb7ed2050800000000000000
+      internalID: 5777528694873972781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-snap_3
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1042
+        width: 351
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec27370889108eab0800000000000000
+      internalID: -4978727633556376882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-snap_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 543
+        width: 371
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a295531dbc9c77a50800000000000000
+      internalID: 6518900862867560746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-snap_5
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 539
+        width: 436
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd31fe1f5ca135f0800000000000000
+      internalID: -778651736017388093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-snap_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 47
+        width: 483
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428f75fe9ac1081b0800000000000000
+      internalID: -5656489615786772444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charaB_idle-to-snap_7
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 142
+        width: 467
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5f36e19677fa660800000000000000
+      internalID: 7399264006158153158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b08a62e87c3624ae19831547a5afbe9b
     internalID: 0
     vertices: []
     indices: 

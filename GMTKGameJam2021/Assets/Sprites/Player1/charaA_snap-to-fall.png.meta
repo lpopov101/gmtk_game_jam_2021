@@ -1,31 +1,7 @@
 fileFormatVersion: 2
-guid: 97fd002e9197f5045983397b015db23e
+guid: df99fa5ccf86c4feba87810a2784a2e3
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2341202463334002695
-    second: charaA_snap-to-idle_0
-  - first:
-      213: -6111235814554914470
-    second: charaA_snap-to-idle_1
-  - first:
-      213: -2344487323372001997
-    second: charaA_snap-to-idle_2
-  - first:
-      213: 8455517010739108423
-    second: charaA_snap-to-idle_3
-  - first:
-      213: -3046221426314860957
-    second: charaA_snap-to-idle_4
-  - first:
-      213: 3900445991348908411
-    second: charaA_snap-to-idle_5
-  - first:
-      213: 4066075000358270059
-    second: charaA_snap-to-idle_6
-  - first:
-      213: -4611830287905558866
-    second: charaA_snap-to-idle_7
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +91,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: charaA_snap-to-idle_0
+      name: charaA_snap-to-fall_0
       rect:
         serializedVersion: 2
         x: 22
@@ -129,20 +105,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 700fa467c3f9d7020800000000000000
-      internalID: 2341202463334002695
+      spriteID: 5a50d39c93849d0d0800000000000000
+      internalID: -3397605030847773275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaA_snap-to-idle_1
+      name: charaA_snap-to-fall_1
       rect:
         serializedVersion: 2
-        x: 511
-        y: 1586
-        width: 462
-        height: 324
+        x: 506
+        y: 1570
+        width: 467
+        height: 333
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +126,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a513fc6c767803ba0800000000000000
-      internalID: -6111235814554914470
+      spriteID: 715fecb03fa49d8e0800000000000000
+      internalID: -1668219779228437225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaA_snap-to-idle_2
+      name: charaA_snap-to-fall_2
       rect:
         serializedVersion: 2
-        x: 92
-        y: 1069
-        width: 357
-        height: 350
+        x: 82
+        y: 1043
+        width: 360
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33561067335b67fd0800000000000000
-      internalID: -2344487323372001997
+      spriteID: e5a0693438b8da6b0800000000000000
+      internalID: -5283413391944840610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaA_snap-to-idle_3
+      name: charaA_snap-to-fall_3
       rect:
         serializedVersion: 2
-        x: 690
-        y: 1065
-        width: 226
-        height: 396
+        x: 667
+        y: 1033
+        width: 272
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74a90690ce7085570800000000000000
-      internalID: 8455517010739108423
+      spriteID: 39214f57bcc871620800000000000000
+      internalID: 2744817303390786195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaA_snap-to-idle_4
+      name: charaA_snap-to-fall_4
       rect:
         serializedVersion: 2
-        x: 183
-        y: 551
-        width: 203
-        height: 403
+        x: 199
+        y: 560
+        width: 219
+        height: 387
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 366a15990c5a9b5d0800000000000000
-      internalID: -3046221426314860957
+      spriteID: 4925555d7fa2714c0800000000000000
+      internalID: -4316934473886903660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaA_snap-to-idle_5
+      name: charaA_snap-to-fall_5
       rect:
         serializedVersion: 2
-        x: 693
-        y: 543
-        width: 216
-        height: 391
+        x: 699
+        y: 559
+        width: 214
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b71b2f3b6fa212630800000000000000
-      internalID: 3900445991348908411
+      spriteID: 9ebd3c8e997d8d210800000000000000
+      internalID: 1358072343687322601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaA_snap-to-idle_6
+      name: charaA_snap-to-fall_6
       rect:
         serializedVersion: 2
-        x: 203
-        y: 37
-        width: 227
-        height: 375
+        x: 191
+        y: 57
+        width: 219
+        height: 413
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b64737a7ba99d6830800000000000000
-      internalID: 4066075000358270059
+      spriteID: b565020dad4ef95d0800000000000000
+      internalID: -3053470393888123301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaA_snap-to-idle_7
+      name: charaA_snap-to-fall_7
       rect:
         serializedVersion: 2
-        x: 713
-        y: 35
-        width: 238
-        height: 355
+        x: 667
+        y: 56
+        width: 264
+        height: 424
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,8 +252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eae6005a9cc7fffb0800000000000000
-      internalID: -4611830287905558866
+      spriteID: 5e16084c1f46eca00800000000000000
+      internalID: 778670775128318437
       vertices: []
       indices: 
       edges: []
@@ -285,7 +261,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e31fe91efbcd4b109aacd5890091827
+    spriteID: fd912933238db4921b73b61f1243f4e4
     internalID: 0
     vertices: []
     indices: 
