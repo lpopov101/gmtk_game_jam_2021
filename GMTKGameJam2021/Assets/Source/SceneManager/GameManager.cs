@@ -40,5 +40,11 @@ public class GameManager
     {
         Debug.Log("Win!");
         // TODO: Implement win condition
+
+        UIController uiController = SceneManager.FindUIController();
+        if (uiController != null)
+        {
+            uiController.notifyUserWin();
+        }
     }
 }
