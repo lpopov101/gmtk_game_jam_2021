@@ -19,6 +19,11 @@ public class SceneManager : MonoBehaviour
         return FindObjectOfType<SceneManager>();
     }
 
+    public static UIController FindUIController()
+    {
+        return FindObjectOfType<UIController>();
+    }
+
     public InputManager GetInputManager()
     {
         return _inputManager;
