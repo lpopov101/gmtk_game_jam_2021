@@ -12,6 +12,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameObject _overlayPanel;
     [SerializeField] private GameObject _menuScreenPanel;
     [SerializeField] private GameObject _winScreenPanel;
+    [SerializeField] private GameObject _creditsScreenPanel;
 
     // In Game Overlay
     [SerializeField] private Text _coinCountField;
@@ -22,9 +23,13 @@ public class UIController : MonoBehaviour
     // Start Menu
     [SerializeField] private Button _menuScreenPlayButton;
     [SerializeField] private Button _menuScreenTutorialButton;
+    [SerializeField] private Button _menuScreenCreditsButton;
 
     // Win Screen
     [SerializeField] private Button _winScreenDismissButton;
+
+    // Credits Screen
+    [SerializeField] private Button _creditsDismissButton;
 
     // Start is called before the first frame update
     void Start()
@@ -35,10 +40,12 @@ public class UIController : MonoBehaviour
         _overlayPanel.SetActive(true);
         _menuScreenPanel.SetActive(true);
         _winScreenPanel.SetActive(false);
+        _creditsScreenPanel.SetActive(false);
 
         setupMenuActions();
         setupTutorialActions();
         setupWinScreenActions();
+        setupCreditsScreenActions();
 
         // initial coin count
         notifyCoinCountChanged();
@@ -57,6 +64,7 @@ public class UIController : MonoBehaviour
         _tutorialPanel.SetActive(false);
         _overlayPanel.SetActive(false);
         _winScreenPanel.SetActive(true);
+        _creditsScreenPanel.SetActive(false);
     }
 
     // In Game Overlay Actions
@@ -87,6 +95,19 @@ public class UIController : MonoBehaviour
         {
             startScreenPresentTutorial();
         });
+
+        _menuScreenCreditsButton.onClick.AddListener(() =>
+        {
+            showCredits();
+        });
+    }
+    private void showCredits()
+    {
+        _menuScreenPanel.SetActive(false);
+        _tutorialPanel.SetActive(false);
+        _overlayPanel.SetActive(false);
+        _winScreenPanel.SetActive(false);
+        _creditsScreenPanel.SetActive(true);
     }
 
     private void startScreenPresentTutorial()
@@ -95,6 +116,7 @@ public class UIController : MonoBehaviour
         _tutorialPanel.SetActive(true);
         _overlayPanel.SetActive(false);
         _winScreenPanel.SetActive(false);
+        _creditsScreenPanel.SetActive(false);
     }
 
     private void startScreenPlayGame()
@@ -105,6 +127,7 @@ public class UIController : MonoBehaviour
         _overlayPanel.SetActive(true);
         _tutorialPanel.SetActive(false);
         _winScreenPanel.SetActive(false);
+        _creditsScreenPanel.SetActive(false);
     }
 
     // Win Screen Actions
@@ -121,5 +144,24 @@ public class UIController : MonoBehaviour
         _tutorialPanel.SetActive(false);
         _overlayPanel.SetActive(false);
         _winScreenPanel.SetActive(false);
+        _creditsScreenPanel.SetActive(false);
+    }
+
+    // Win Screen Actions
+    private void setupCreditsScreenActions()
+    {
+        _creditsDismissButton.onClick.AddListener(() =>
+        {
+            dismissCredits();
+        });
+    }
+
+    private void dismissCredits()
+    {
+        _menuScreenPanel.SetActive(true);
+        _tutorialPanel.SetActive(false);
+        _overlayPanel.SetActive(false);
+        _winScreenPanel.SetActive(false);
+        _creditsScreenPanel.SetActive(false);
     }
 }
