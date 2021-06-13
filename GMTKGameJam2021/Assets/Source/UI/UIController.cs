@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
+    private GameManager _gameManager;
+
     // Sub Panels
     [SerializeField] private GameObject _tutorialPanel;
     [SerializeField] private GameObject _overlayPanel;
@@ -23,12 +25,22 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         //_coinCountField.text = "Coins Collected: 32!";
+        _gameManager = SceneManager.FindSceneManager().GetGameManager();
         _tutorialPanel.SetActive(false);
         _overlayPanel.SetActive(true);
         _menuScreenPanel.SetActive(true);
 
         setupMenuActions();
         setupTutorialActions();
+
+        notifyCoinCountChanged();
+    }
+
+    // Public Interface
+    public void notifyCoinCountChanged() {
+        int coinCount = _gameManager._coinsCollected;
+        int totalCoins = _gameManager._totalCoins;
+        _coinCountField.text = "Coins Collected: " + coinCount + "/" + totalCoins;
     }
 
     // In Game Overlay Actions
@@ -45,8 +57,7 @@ public class UIController : MonoBehaviour
     }
 
     // Start Menu Actions
-    private void setupMenuActions()
-    {
+    private void setupMenuActions() {
         _menuScreenPlayButton.onClick.AddListener(() => {
             startScreenPlayGame();
         });
@@ -56,19 +67,15 @@ public class UIController : MonoBehaviour
         });
     }
 
-    private void startScreenPresentTutorial()
-    {
+    private void startScreenPresentTutorial() {
         _menuScreenPanel.SetActive(false);
         _tutorialPanel.SetActive(true);
         _overlayPanel.SetActive(true);
     }
 
-    private void startScreenPlayGame()
-    {
+    private void startScreenPlayGame() {
         _menuScreenPanel.SetActive(false);
         _overlayPanel.SetActive(true);
         _tutorialPanel.SetActive(false);
     }
-
-
 }
