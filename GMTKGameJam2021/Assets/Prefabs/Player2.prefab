@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 7379247996449448649}
   - component: {fileID: 7379247996449448650}
   - component: {fileID: 7379247996449448648}
+  - component: {fileID: 539410199177341942}
   m_Layer: 7
   m_Name: Player2
   m_TagString: Test2
@@ -227,6 +228,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 500e4e5c9aaa5b94e8a009929f8ff48c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &539410199177341942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379247996449448642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09eecc2aa5a6b174491801d49eb06f8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _walkClip: {fileID: 8300000, guid: e4b7e06dd7f24e342904227d84b6c63c, type: 3}
+  _jumpClip: {fileID: 8300000, guid: f214e473e86dcb64f9649628ce5a59a0, type: 3}
+  _snapClip: {fileID: 8300000, guid: 396ca8773a7009545b73d9908f129fed, type: 3}
+  _landClip: {fileID: 8300000, guid: 3b78e30a6f7fa4941a7e6f91ab5de7e1, type: 3}
+  _walkVolume: 0.75
+  _jumpVolume: 0.75
+  _snapVolume: 1
+  _landVolume: 1
 --- !u!1 &7379247997458800502
 GameObject:
   m_ObjectHideFlags: 0
