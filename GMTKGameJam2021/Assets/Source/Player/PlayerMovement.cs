@@ -152,8 +152,7 @@ public class PlayerMovement : MonoBehaviour
             return false;
         });
 
-        _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.JUMPING,
-                                                         PlayerManager.MovementState.MIDAIR},
+        _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.MIDAIR,
                                                  PlayerManager.MovementState.IDLE,
         () =>
         {
@@ -223,7 +222,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Jump()
-    {   _rb.velocity = new Vector2(_rb.velocity.x, 0);
+    {
+        _rb.velocity = new Vector2(_rb.velocity.x, 0);
         _rb.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
     }
 
