@@ -104,6 +104,14 @@ public class PlayerMovement : MonoBehaviour
             return _playerMgr.GetPlayerJump();
         });
 
+        _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.WALKING,
+                                                         PlayerManager.MovementState.IDLE},
+                                                 PlayerManager.MovementState.MIDAIR,
+        () =>
+        {
+            return !CheckGrounded();
+        });
+
         _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.JUMPING,
                                                          PlayerManager.MovementState.MIDAIR,
                                                          PlayerManager.MovementState.WALKING,
