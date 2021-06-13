@@ -116,6 +116,7 @@ public class UIController : MonoBehaviour
     }
 
     private void returnToMainMenu() {
+        _gameManager.hardRestartGame();
         _menuScreenPanel.SetActive(true);
         _tutorialPanel.SetActive(false);
         _overlayPanel.SetActive(false);
