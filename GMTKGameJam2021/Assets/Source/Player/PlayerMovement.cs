@@ -45,9 +45,14 @@ public class PlayerMovement : MonoBehaviour
         _stateMachine.Run();
     }
 
+    private void FixedUpdate()
+    {
+        _stateMachine.FixedRun();
+    }
+
     private void InitStateMachine()
     {
-        _stateMachine.SetStateBehaviorCallback( PlayerManager.MovementState.IDLE,
+        _stateMachine.SetStateFixedBehaviorCallback( PlayerManager.MovementState.IDLE,
         () =>
         {
             Deccelerate();
@@ -55,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             ApplyGroundClampForce();
         });
 
-        _stateMachine.SetStateBehaviorCallback( PlayerManager.MovementState.WALKING,
+        _stateMachine.SetStateFixedBehaviorCallback( PlayerManager.MovementState.WALKING,
         () =>
         {
             ApplyGroundedHorizontalForce();
@@ -63,20 +68,20 @@ public class PlayerMovement : MonoBehaviour
             ApplyGroundClampForce();
         });
 
-        _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.JUMPING,
+        _stateMachine.SetStateFixedBehaviorCallback(PlayerManager.MovementState.JUMPING,
         () =>
         {
             ApplyMidairHorizontalForce();
             ClampHorizontalVelocity();
         });
 
-        _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.SNAPPING,
+        _stateMachine.SetStateFixedBehaviorCallback(PlayerManager.MovementState.SNAPPING,
         () =>
         {
             ApplyMidairHorizontalForce();
         });
 
-        _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.MIDAIR,
+        _stateMachine.SetStateFixedBehaviorCallback(PlayerManager.MovementState.MIDAIR,
         () =>
         {
             ApplyMidairHorizontalForce();
