@@ -49,7 +49,7 @@ public class UIController : MonoBehaviour
     {
         int coinCount = _gameManager._coinsCollected;
         int totalCoins = _gameManager._totalCoins;
-        _coinCountField.text = "Coins Collected: " + coinCount + "/" + totalCoins;
+        _coinCountField.text =  $"{coinCount}/{totalCoins}";
     }
 
     public void notifyUserWin() {

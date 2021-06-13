@@ -8,21 +8,13 @@ public class ParallaxBackground : MonoBehaviour
     private Transform _backgroundTransform;
     [SerializeField]
     private float _parallaxFactor;
-
-    private Vector2 _backgroundPosOriginal;
-    private Vector2 _camPosOriginal;
-
-    private void Start()
-    {
-        _backgroundPosOriginal = _backgroundTransform.position;
-        _camPosOriginal = transform.position;
-    }
+    [SerializeField]
+    private Vector2 _initPos;
     
     private void Update()
     {
-        _backgroundTransform.position =
-            new Vector3(_backgroundPosOriginal.x - ((transform.position.x - _camPosOriginal.x) * _parallaxFactor),
-                        _backgroundPosOriginal.y - ((transform.position.y - _camPosOriginal.y) * _parallaxFactor),
-                        _backgroundTransform.position.z);
+        _backgroundTransform.localPosition = new Vector3(-(transform.position.x - _initPos.x) * _parallaxFactor,
+                                                         -(transform.position.y - _initPos.y) * _parallaxFactor,
+                                                         _backgroundTransform.localPosition.z);
     }
 }
