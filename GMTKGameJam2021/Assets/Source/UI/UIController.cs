@@ -72,7 +72,7 @@ public class UIController : MonoBehaviour
 
     private void hideTutorial()
     {
-        _tutorialPanel.SetActive(false);
+        startScreenPlayGame();
     }
 
     // Start Menu Actions
