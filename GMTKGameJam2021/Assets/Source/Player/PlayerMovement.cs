@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float _groundClampForce = 1.0F;
     [SerializeField]
-    private float _topHorizontalSpeed = 1.0F;
+    private float _topHorizontalSpeed = 2.0F;
     [SerializeField]
     private float _jumpStrength = 10.0F;
     [SerializeField]
@@ -74,7 +74,6 @@ public class PlayerMovement : MonoBehaviour
         () =>
         {
             ApplyMidairHorizontalForce();
-            ClampHorizontalVelocity();
         });
 
         _stateMachine.SetStateBehaviorCallback(PlayerManager.MovementState.MIDAIR,
@@ -189,8 +188,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void ClampHorizontalVelocity()
     {
+        if (_playerMgr.GetPlayerFire())
+        {
+            return;
+        }
+
         var clampedXVelocity = Mathf.Clamp(_rb.velocity.x, -_topHorizontalSpeed,
-                                           _topHorizontalSpeed);
+                                            _topHorizontalSpeed);
         _rb.velocity = new Vector2(clampedXVelocity, _rb.velocity.y);
     }
 
