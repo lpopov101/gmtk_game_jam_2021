@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
     private PlayerManager _playerMgr;
+    private PlayerSound _playerSound;
     private StateMachine<PlayerManager.MovementState> _stateMachine;
 
     private void Start()
@@ -35,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _playerMgr = GetComponent<PlayerManager>();
+        _playerSound = GetComponent<PlayerSound>();
         _stateMachine = _playerMgr.GetMovementStateMachine();
         InitStateMachine();
     }
@@ -66,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
             ApplyGroundedHorizontalForce();
             ClampHorizontalVelocity();
             ApplyGroundClampForce();
+            _playerSound.PlayWalkSound();
         });
 
         _stateMachine.SetStateFixedBehaviorCallback(PlayerManager.MovementState.JUMPING,
@@ -92,12 +95,14 @@ public class PlayerMovement : MonoBehaviour
         () =>
         {
             Jump();
+            _playerSound.PlayJumpSound();
         });
 
         _stateMachine.SetStateEntryCallback(PlayerManager.MovementState.SNAPPING,
         () =>
         {
             Snap();
+            _playerSound.PlaySnapSound();
         });
 
         _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.WALKING,
@@ -139,14 +144,28 @@ public class PlayerMovement : MonoBehaviour
         () =>
         {
             bool slow = Mathf.Abs(_rb.velocity.x) < 2f;
-            return slow && CheckGrounded() && !_playerMgr.GetPlayerFire();
+            if(slow && CheckGrounded() && !_playerMgr.GetPlayerFire())
+            {
+                _playerSound.PlayLandSound();
+                return true;
+            }
+            return false;
         });
 
-        _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.MIDAIR,
+        _stateMachine.SetStateTransitionCallback(new[] { PlayerManager.MovementState.JUMPING,
+                                                         PlayerManager.MovementState.MIDAIR},
                                                  PlayerManager.MovementState.IDLE,
         () =>
         {
-            return CheckGrounded();
+            if(CheckGrounded())
+            {
+                if(_rb.velocity.y <= 0)
+                {
+                    _playerSound.PlayLandSound();
+                }
+                return true;
+            }
+            return false;
         });
 
         _stateMachine.SetStateTransitionCallback(PlayerManager.MovementState.WALKING,
