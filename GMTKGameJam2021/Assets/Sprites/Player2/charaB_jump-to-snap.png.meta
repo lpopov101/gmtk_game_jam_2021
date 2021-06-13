@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 10bfd424e43581446a2ce10a834d9d16
+guid: 479b446d2bec841acb7b9f445bc76e9e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1980803780481549935
-    second: charaB_idle-to-snap_0
+      213: -2396545549590507153
+    second: charaB_jump-to-snap_0
   - first:
-      213: -1085851241868474074
-    second: charaB_idle-to-snap_1
+      213: 9059967952553743963
+    second: charaB_jump-to-snap_1
   - first:
-      213: 5777528694873972781
-    second: charaB_idle-to-snap_2
+      213: 1723288128126381276
+    second: charaB_jump-to-snap_2
   - first:
-      213: -4978727633556376882
-    second: charaB_idle-to-snap_3
+      213: -5201271105199514721
+    second: charaB_jump-to-snap_3
   - first:
-      213: 6518900862867560746
-    second: charaB_idle-to-snap_4
+      213: 1461158783351357884
+    second: charaB_jump-to-snap_4
   - first:
-      213: -778651736017388093
-    second: charaB_idle-to-snap_5
+      213: -4527867285990206266
+    second: charaB_jump-to-snap_5
   - first:
-      213: -5656489615786772444
-    second: charaB_idle-to-snap_6
+      213: 5929113902945427343
+    second: charaB_jump-to-snap_6
   - first:
-      213: 7399264006158153158
-    second: charaB_idle-to-snap_7
+      213: 9114015574053399161
+    second: charaB_jump-to-snap_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: charaB_idle-to-snap_0
+      name: charaB_jump-to-snap_0
       rect:
         serializedVersion: 2
-        x: 84
-        y: 1545
-        width: 332
-        height: 354
+        x: 157
+        y: 1535
+        width: 152
+        height: 457
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19975a6d475c284e0800000000000000
-      internalID: -1980803780481549935
+      spriteID: f615d942582cdbed0800000000000000
+      internalID: -2396545549590507153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaB_idle-to-snap_1
+      name: charaB_jump-to-snap_1
       rect:
         serializedVersion: 2
-        x: 596
-        y: 1541
-        width: 330
-        height: 361
+        x: 637
+        y: 1535
+        width: 213
+        height: 451
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62943817c084ee0f0800000000000000
-      internalID: -1085851241868474074
+      spriteID: b569360e9d87bbd70800000000000000
+      internalID: 9059967952553743963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaB_idle-to-snap_2
+      name: charaB_jump-to-snap_2
       rect:
         serializedVersion: 2
-        x: 111
-        y: 1042
-        width: 328
-        height: 371
+        x: 83
+        y: 1033
+        width: 321
+        height: 443
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d20e691ccb7ed2050800000000000000
-      internalID: 5777528694873972781
+      spriteID: cdcee921c695ae710800000000000000
+      internalID: 1723288128126381276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaB_idle-to-snap_3
+      name: charaB_jump-to-snap_3
       rect:
         serializedVersion: 2
-        x: 583
-        y: 1042
-        width: 351
-        height: 345
+        x: 545
+        y: 1037
+        width: 400
+        height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec27370889108eab0800000000000000
-      internalID: -4978727633556376882
+      spriteID: f9b5412cc7f51d7b0800000000000000
+      internalID: -5201271105199514721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaB_idle-to-snap_4
+      name: charaB_jump-to-snap_4
       rect:
         serializedVersion: 2
-        x: 63
-        y: 543
-        width: 371
-        height: 327
+        x: 21
+        y: 547
+        width: 450
+        height: 409
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a295531dbc9c77a50800000000000000
-      internalID: 6518900862867560746
+      spriteID: cb189120c24174410800000000000000
+      internalID: 1461158783351357884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaB_idle-to-snap_5
+      name: charaB_jump-to-snap_5
       rect:
         serializedVersion: 2
-        x: 531
-        y: 539
-        width: 436
-        height: 350
+        x: 500
+        y: 578
+        width: 481
+        height: 359
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cd31fe1f5ca135f0800000000000000
-      internalID: -778651736017388093
+      spriteID: 6c4117c61b8c921c0800000000000000
+      internalID: -4527867285990206266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaB_idle-to-snap_6
+      name: charaB_jump-to-snap_6
       rect:
         serializedVersion: 2
-        x: 8
-        y: 47
-        width: 483
-        height: 366
+        x: 15
+        y: 119
+        width: 472
+        height: 307
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 428f75fe9ac1081b0800000000000000
-      internalID: -5656489615786772444
+      spriteID: f8f54e15ea1784250800000000000000
+      internalID: 5929113902945427343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charaB_idle-to-snap_7
+      name: charaB_jump-to-snap_7
       rect:
         serializedVersion: 2
         x: 522
@@ -276,8 +276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c5f36e19677fa660800000000000000
-      internalID: 7399264006158153158
+      spriteID: 97aa4d060ec7b7e70800000000000000
+      internalID: 9114015574053399161
       vertices: []
       indices: 
       edges: []
@@ -285,7 +285,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b08a62e87c3624ae19831547a5afbe9b
+    spriteID: 1e5190bd746d7402298210b00837a93b
     internalID: 0
     vertices: []
     indices: 
