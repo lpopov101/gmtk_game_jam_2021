@@ -11,6 +11,7 @@ public class StateMachine<StateType>
 
     private StateType _currentState;
     private Dictionary<StateType, StateBehaviorCallback> _stateBehaviorCallbacks;
+    private Dictionary<StateType, StateBehaviorCallback> _stateFixedBehaviorCallbacks;
     private Dictionary<StateType, StateBehaviorCallback> _stateEntryCallbacks;
     private Dictionary<StateType, StateBehaviorCallback> _stateExitCallbacks;
     private Dictionary<StateType, Dictionary<StateType, StateTransitionCallback>> _stateTransitionCallbacks;
@@ -19,6 +20,7 @@ public class StateMachine<StateType>
     {
         _currentState = initialState;
         _stateBehaviorCallbacks = new Dictionary<StateType, StateBehaviorCallback>();
+        _stateFixedBehaviorCallbacks = new Dictionary<StateType, StateBehaviorCallback>();
         _stateEntryCallbacks = new Dictionary<StateType, StateBehaviorCallback>();
         _stateExitCallbacks = new Dictionary<StateType, StateBehaviorCallback>();
         _stateTransitionCallbacks = new Dictionary<StateType, Dictionary<StateType, StateTransitionCallback>>();
@@ -36,6 +38,11 @@ public class StateMachine<StateType>
     public void SetStateBehaviorCallback(StateType state, StateBehaviorCallback behaviorCallback)
     {
         _stateBehaviorCallbacks[state] = behaviorCallback;
+    }
+
+    public void SetStateFixedBehaviorCallback(StateType state, StateBehaviorCallback behaviorCallback)
+    {
+        _stateFixedBehaviorCallbacks[state] = behaviorCallback;
     }
 
     public void SetStateEntryCallback(StateType state, StateBehaviorCallback entryCallback)
@@ -77,11 +84,33 @@ public class StateMachine<StateType>
         }
     }
 
+    public void FixedRun()
+    {
+        FixedBehavior();
+        foreach(KeyValuePair<StateType, StateTransitionCallback> transition in _stateTransitionCallbacks[_currentState])
+        {
+            if(transition.Value())
+            {
+                Exit();
+                _currentState = transition.Key;
+                Entry();
+            }
+        }
+    }
+
     private void Behavior()
     {
         if(_stateBehaviorCallbacks.ContainsKey(_currentState))
         {
             _stateBehaviorCallbacks[_currentState]();
+        }
+    }
+
+    private void FixedBehavior()
+    {
+        if(_stateFixedBehaviorCallbacks.ContainsKey(_currentState))
+        {
+            _stateFixedBehaviorCallbacks[_currentState]();
         }
     }
 
