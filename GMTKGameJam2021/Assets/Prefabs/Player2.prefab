@@ -170,11 +170,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543ea7d45cf1b594dafc69e44cc16f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _horizontalAcceleration: 3
-  _horizontalAccelerationMidair: 1
-  _horizontalGroundedDecceleration: 2
-  _groundClampForce: 2
-  _topHorizontalSpeed: 5
+  _horizontalAcceleration: 35
+  _horizontalAccelerationMidair: 20
+  _horizontalGroundedDecceleration: 20
+  _groundClampForce: 20
+  _topHorizontalSpeed: 6
   _jumpStrength: 7.5
   _groundLayer:
     serializedVersion: 2
