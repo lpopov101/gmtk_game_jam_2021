@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private LayerMask _groundLayer;
     [SerializeField]
-    private Transform _groundProbeTransform;
+    private Transform[] _groundProbeTransforms;
 
     private Rigidbody2D _rb;
     private Animator _animator;
@@ -162,7 +162,7 @@ public class PlayerMovement : MonoBehaviour
     private void ApplyGroundedHorizontalForce()
     {
         var direction = Vector2.right;
-        var hit = Physics2D.Raycast(transform.position, -Vector2.up, 100, _groundLayer);
+        var hit = Physics2D.Raycast((Vector2)transform.position + (0.2F * _rb.velocity.normalized), -Vector2.up, 100, _groundLayer);
         if(hit.collider != null)
         {
             direction = -Vector2.Perpendicular(hit.normal);
@@ -216,6 +216,13 @@ public class PlayerMovement : MonoBehaviour
 
     private bool CheckGrounded()
     {
-        return Physics2D.OverlapCircle(_groundProbeTransform.position, 0.1F, _groundLayer);
+        foreach(var groundProbeTransform in _groundProbeTransforms)
+        {
+            if(Physics2D.OverlapCircle(groundProbeTransform.position, 0.2F, _groundLayer))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
