@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float _groundClampForce = 1.0F;
     [SerializeField]
-    private float _topHorizontalSpeed = 1.0F;
+    private float _topHorizontalSpeed = 2.0F;
     [SerializeField]
     private float _jumpStrength = 10.0F;
     [SerializeField]
